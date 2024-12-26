@@ -53,7 +53,9 @@ const workflowSteps = [
 const DocumentWorkflow = () => {
   return (
     <div className="max-w-3xl mx-auto p-8">
-      <h2 className="text-2xl font-bold mb-8 text-workflow-primary">Document Workflow Status</h2>
+      <h2 className="text-2xl font-bold mb-8 text-workflow-primary animate-fade-in">
+        Document Workflow Status
+      </h2>
       <div className="space-y-8">
         {workflowSteps.map((step, index) => (
           <WorkflowStep
