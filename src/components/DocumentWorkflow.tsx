@@ -52,11 +52,11 @@ const workflowSteps = [
 
 const DocumentWorkflow = () => {
   return (
-    <div className="max-w-3xl mx-auto p-8">
-      <h2 className="text-2xl font-bold mb-8 text-workflow-primary animate-fade-in">
+    <div className="max-w-6xl mx-auto p-8">
+      <h2 className="text-2xl font-bold mb-12 text-workflow-primary animate-fade-in text-center">
         Document Workflow Status
       </h2>
-      <div className="space-y-8">
+      <div className="flex justify-between items-start space-x-4 overflow-x-auto pb-8">
         {workflowSteps.map((step, index) => (
           <WorkflowStep
             key={index}
